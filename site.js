@@ -47,10 +47,17 @@ const io = new IntersectionObserver((es) => {
   es.forEach((e) => {
     const v = e.target;
     if (reduce.matches) return v.pause();
-    if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause();
+    if (e.isIntersecting) { v.preload = 'auto'; v.play().catch((err) => { if (err.name === 'NotAllowedError') stillFor(v); }); } else v.pause();
   });
 }, { threshold: 0.2 });
-videos.forEach((v) => { if (reduce.matches) v.removeAttribute('autoplay'); io.observe(v); });
+// Spelas ingen källa (format som webbläsaren inte avkodar) visas stillbilden i stället för svart ruta.
+const stillFor = (v) => { const i = new Image(); i.src = v.poster; i.alt = v.getAttribute('aria-label') || ''; i.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block'; v.replaceWith(i); };
+videos.forEach((v) => {
+  v.removeAttribute('autoplay');
+  v.addEventListener('error', () => stillFor(v));
+  v.lastElementChild?.addEventListener('error', () => stillFor(v));
+  io.observe(v);
+});
 reduce.addEventListener('change', () => videos.forEach((v) => reduce.matches && v.pause()));
 
 // Diagram som växer fram när det kommer i bild.
