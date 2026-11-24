@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Staka – längdskidåkning för SkiErg</title>
+    <meta
+      name="description"
+      content="Staka är en gratis app med öppen källkod: längdskidåkning i 3D för Concept2 SkiErg, med en brygga till Zwift och SYSTM över Bluetooth."
+    />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="./assets/index-Ch_jnnz4.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dw6IwXl6.css">
+  </head>
+  <body>
+    <header class="hero">
+      <img class="hero-media" src="media/hero.jpg" alt="" />
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow">Gratis · öppen källkod · Mac och Windows</p>
+        <h1>Staka</h1>
+        <p class="lead">
+          Längdskidåkning i 3D för Concept2 SkiErg. Åk genom skog, över fjäll och mot Mora i
+          kvällsljus, eller skicka din effekt till Zwift och SYSTM som en cykel&shy;effektmätare
+          över Bluetooth.
+        </p>
+        <div class="download" data-testid="download">
+          <a
+            class="btn btn-primary"
+            id="download-primary"
+            data-testid="download-primary"
+            href="#ladda-ned"
+          >
+            Ladda ned Staka
+          </a>
+          <p class="download-alt">
+            <span id="download-alt-text">Finns för</span>
+            <a id="download-mac" data-testid="download-mac" href="#">Mac</a> och
+            <a id="download-windows" data-testid="download-windows" href="#">Windows</a> ·
+            <a href="#installera">Så installerar du</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap features" aria-labelledby="om">
+        <h2 id="om">Det här är Staka</h2>
+        <div class="grid">
+          <figure>
+            <img
+              src="media/huvudvy.jpg"
+              alt="Åkaren stakar i skogsspåret med effekt och puls i hörnet"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Åk i Staka.</strong> Varje stavtag på SkiErgen driver åkaren framåt; backar,
+              vind och snöfall känns i farten.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="media/kvall.jpg"
+              alt="Målgången i Mora med publik längs spåret"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Mot Mora.</strong> Spurter, klättringar och målgång genom staden, med publik
+              längs spåret.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="media/utsikten.jpg" alt="Utsikt över fjällen och skogen" loading="lazy" />
+            <figcaption>
+              <strong>Flera banor, väder och tid på dygnet.</strong> Skogsslingor och fjällturer i
+              gryning, dimma, snöfall eller skymning, med intervallpass på 30 minuter och mer.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="media/stuga.jpg" alt="Skogsspåret förbi en röd stuga" loading="lazy" />
+            <figcaption>
+              <strong>Träna i en annan app.</strong> Staka sänder din SkiErg-effekt som en
+              Bluetooth-effektmätare, omräknad till cykelwatt, så att du kan köra pass i Zwift eller
+              SYSTM.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="wrap" aria-labelledby="trailer-rubrik">
+        <h2 id="trailer-rubrik">Se Staka i rörelse</h2>
+        <video
+          class="trailer"
+          src="media/trailer.mp4"
+          poster="media/poster.jpg"
+          controls
+          muted
+          playsinline
+          preload="metadata"
+          data-testid="trailer"
+        ></video>
+      </section>
+
+      <section class="wrap" id="ladda-ned" aria-labelledby="ladda-ned-rubrik">
+        <h2 id="ladda-ned-rubrik">Ladda ned</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Mac</h3>
+            <p>macOS 12 eller senare, Apple Silicon och Intel i samma app (.dmg).</p>
+            <a class="btn" data-testid="card-mac" data-os="mac" href="#">Ladda ned för Mac</a>
+          </article>
+          <article class="card">
+            <h3>Windows</h3>
+            <p>Windows 10 eller 11, 64 bitar (installationsprogram, .exe).</p>
+            <a class="btn" data-testid="card-windows" data-os="windows" href="#"
+              >Ladda ned för Windows</a
+            >
+          </article>
+        </div>
+        <p class="note">
+          Tidigare versioner och vad som är nytt finns bland
+          <a id="releases-link" href="#">versionerna på GitHub</a>.
+        </p>
+        <aside class="notice" data-testid="notice">
+          <h3>Ärligt talat</h3>
+          <p>
+            Staka är en tidig version som utvecklas och provas på en Mac med Apple Silicon och en
+            riktig SkiErg.
+            <strong
+              >Windows-versionen och Intel-delen av Mac-appen är inte provade på riktig hårdvara
+              än.</strong
+            >
+            De byggs och startas automatiskt i en molnmiljö, men ingen har åkt med dem. Hör gärna av
+            dig om något inte fungerar.
+          </p>
+        </aside>
+      </section>
+
+      <section class="wrap" id="installera" aria-labelledby="installera-rubrik">
+        <h2 id="installera-rubrik">Så installerar du</h2>
+        <p>
+          Staka är gratis och har ingen betald utvecklarsignatur från Apple eller Microsoft. Därför
+          varnar systemet första gången, och du godkänner appen själv en gång. Det tar en minut.
+        </p>
+        <div class="cards">
+          <article class="card guide" data-testid="guide-mac">
+            <h3>Mac</h3>
+            <ol>
+              <li>
+                Öppna <code>Staka-mac.dmg</code> och dra <strong>Staka</strong> till
+                <strong>Program</strong>.
+              </li>
+              <li>
+                Starta Staka från Program. macOS säger att appen inte kunde kontrolleras; klicka
+                <strong>Klar</strong>.
+              </li>
+              <li>
+                Öppna <strong>Systeminställningar → Integritet och säkerhet</strong>, rulla ned till
+                <em>Säkerhet</em> och klicka <strong>Öppna ändå</strong> vid raden om Staka.
+              </li>
+              <li>
+                Bekräfta med <strong>Öppna ändå</strong> och ditt lösenord eller Touch ID. Därefter
+                startar Staka som vanligt.
+              </li>
+            </ol>
+            <details>
+              <summary>macOS säger att ”Staka är skadat och kan inte öppnas”</summary>
+              <p>
+                Det betyder att macOS har satt karantän på den nedladdade appen, inte att filen är
+                trasig. Flytta Staka till Program, öppna <strong>Terminal</strong> och kör:
+              </p>
+              <pre><code>xattr -cr /Applications/Staka.app</code></pre>
+              <p>Starta sedan Staka igen.</p>
+            </details>
+          </article>
+          <article class="card guide" data-testid="guide-windows">
+            <h3>Windows</h3>
+            <ol>
+              <li>
+                Öppna <code>Staka-windows.exe</code>. Säger webbläsaren att filen är ovanlig, välj
+                <strong>Behåll</strong>.
+              </li>
+              <li>
+                Windows SmartScreen visar ”Windows skyddade datorn”. Klicka
+                <strong>Mer information</strong> och sedan <strong>Kör ändå</strong>.
+              </li>
+              <li>Följ installationsprogrammet. Staka hamnar i Start-menyn och på skrivbordet.</li>
+            </ol>
+            <p class="small">Bluetooth-sändningen kräver en dator med Bluetooth Low Energy.</p>
+          </article>
+        </div>
+        <p>
+          Anslut SkiErgens monitor (PM5) med USB-kabeln till datorn, starta Staka och välj ett pass.
+          Du kan också prova med simulerad åkning utan SkiErg.
+        </p>
+      </section>
+
+      <section class="wrap" id="licenser" aria-labelledby="licenser-rubrik">
+        <h2 id="licenser-rubrik">Licenser och erkännanden</h2>
+        <p>
+          Staka är gratis och byggt med programvara med öppen källkod, bland annat Electron,
+          Chromium, React och three.js. Licenstexterna följer med i appen (Profil → Licenser och
+          erkännanden) och finns här:
+        </p>
+        <ul>
+          <li>
+            <a href="licenses/THIRD_PARTY_LICENSES.txt" data-testid="licenses-link"
+              >Licenser för programvara från tredje part</a
+            >
+          </li>
+          <li>
+            <a href="licenses/ATTRIBUTIONS.md" data-testid="attributions-link"
+              >Erkännanden för grafik och modeller</a
+            >
+          </li>
+        </ul>
+        <p class="small">
+          Concept2 och SkiErg är varumärken som tillhör Concept2, Inc. Zwift tillhör Zwift, Inc. och
+          SYSTM tillhör Wahoo Fitness. Staka är ett fristående projekt och inte knutet till,
+          sponsrat av eller godkänt av dem.
+        </p>
+      </section>
+    </main>
+
+    <footer class="wrap footer">
+      <p>Staka · gratis för alla · <a href="#licenser">licenser</a></p>
+    </footer>
+  </body>
+</html>
