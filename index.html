@@ -1,230 +1,142 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Staka – längdskidåkning för SkiErg</title>
-    <meta
-      name="description"
-      content="Staka är en gratis app med öppen källkod: längdskidåkning i 3D för Concept2 SkiErg, med en brygga till Zwift och SYSTM över Bluetooth."
-    />
-    <meta name="color-scheme" content="dark" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <script type="module" crossorigin src="./assets/index-Ch_jnnz4.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dw6IwXl6.css">
-  </head>
-  <body>
-    <header class="hero">
-      <img class="hero-media" src="media/hero.jpg" alt="" />
-      <div class="hero-shade"></div>
-      <div class="hero-content wrap">
-        <p class="eyebrow">Gratis · öppen källkod · Mac och Windows</p>
-        <h1>Staka</h1>
-        <p class="lead">
-          Längdskidåkning i 3D för Concept2 SkiErg. Åk genom skog, över fjäll och mot Mora i
-          kvällsljus, eller skicka din effekt till Zwift och SYSTM som en cykel&shy;effektmätare
-          över Bluetooth.
-        </p>
-        <div class="download" data-testid="download">
-          <a
-            class="btn btn-primary"
-            id="download-primary"
-            data-testid="download-primary"
-            href="#ladda-ned"
-          >
-            Ladda ned Staka
-          </a>
-          <p class="download-alt">
-            <span id="download-alt-text">Finns för</span>
-            <a id="download-mac" data-testid="download-mac" href="#">Mac</a> och
-            <a id="download-windows" data-testid="download-windows" href="#">Windows</a> ·
-            <a href="#installera">Så installerar du</a>
-          </p>
-        </div>
-      </div>
-    </header>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{name} – virtuell längdskidåkning för SkiErg</title>
+<meta name="description" content="Gratis app med öppen källkod: åk längdskidor i 3D på din Concept2 SkiErg, skicka effekt till Zwift och följ utvecklingen.">
 
-    <main>
-      <section class="wrap features" aria-labelledby="om">
-        <h2 id="om">Det här är Staka</h2>
-        <div class="grid">
-          <figure>
-            <img
-              src="media/huvudvy.jpg"
-              alt="Åkaren stakar i skogsspåret med effekt och puls i hörnet"
-              loading="lazy"
-            />
-            <figcaption>
-              <strong>Åk i Staka.</strong> Varje stavtag på SkiErgen driver åkaren framåt; backar,
-              vind och snöfall känns i farten.
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="media/kvall.jpg"
-              alt="Målgången i Mora med publik längs spåret"
-              loading="lazy"
-            />
-            <figcaption>
-              <strong>Mot Mora.</strong> Spurter, klättringar och målgång genom staden, med publik
-              längs spåret.
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="media/utsikten.jpg" alt="Utsikt över fjällen och skogen" loading="lazy" />
-            <figcaption>
-              <strong>Flera banor, väder och tid på dygnet.</strong> Skogsslingor och fjällturer i
-              gryning, dimma, snöfall eller skymning, med intervallpass på 30 minuter och mer.
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="media/stuga.jpg" alt="Skogsspåret förbi en röd stuga" loading="lazy" />
-            <figcaption>
-              <strong>Träna i en annan app.</strong> Staka sänder din SkiErg-effekt som en
-              Bluetooth-effektmätare, omräknad till cykelwatt, så att du kan köra pass i Zwift eller
-              SYSTM.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="draft-a">
+<p class="banner" role="status"><span data-name>Skare</span> är under utveckling – nedladdningen öppnar snart.</p>
+<header class="top">
+  <a class="brand" href="#hjalte"><span data-name>Skare</span></a>
+  <nav aria-label="Sektioner"><a href="#akupplevelsen">Åkupplevelsen</a><a href="#bryggan">Bryggan</a><a href="#historik">Historik</a><a href="#ladda-ned" class="pill">Ladda ned</a></nav>
+</header>
+<main>
 
-      <section class="wrap" aria-labelledby="trailer-rubrik">
-        <h2 id="trailer-rubrik">Se Staka i rörelse</h2>
-        <video
-          class="trailer"
-          src="media/trailer.mp4"
-          poster="media/poster.jpg"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          data-testid="trailer"
-        ></video>
-      </section>
+<section id="hjalte" class="hero">
+  <div class="hero-bg">
+  <figure class="clip">
+    <video data-loop muted loop playsinline preload="none" poster="media/a-hjalte.jpg" aria-label="Animation från appen">
+      <source src="media/a-hjalte.webm" type="video/webm">
+      <source src="media/a-hjalte.mp4" type="video/mp4">
+    </video>
+  </figure></div>
+  <p class="eyebrow">Gratis · öppen källkod · Mac och Windows</p>
+  <h1>Längdskidåkning<br>i <em>3D</em> på din SkiErg.</h1>
+  <p class="lead"><span data-name>Skare</span> gör varje pass på Concept2 SkiErg till en tur på skidspår: backar, kurvor, väder och motstånd som du känner i armarna.</p>
+  <p class="cta"><span class="btn off" aria-disabled="true">Kommer snart</span><a class="ghost" href="#installera">Installationsguide</a></p>
+</section>
 
-      <section class="wrap" id="ladda-ned" aria-labelledby="ladda-ned-rubrik">
-        <h2 id="ladda-ned-rubrik">Ladda ned</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Mac</h3>
-            <p>macOS 12 eller senare, Apple Silicon och Intel i samma app (.dmg).</p>
-            <a class="btn" data-testid="card-mac" data-os="mac" href="#">Ladda ned för Mac</a>
-          </article>
-          <article class="card">
-            <h3>Windows</h3>
-            <p>Windows 10 eller 11, 64 bitar (installationsprogram, .exe).</p>
-            <a class="btn" data-testid="card-windows" data-os="windows" href="#"
-              >Ladda ned för Windows</a
-            >
-          </article>
-        </div>
-        <p class="note">
-          Tidigare versioner och vad som är nytt finns bland
-          <a id="releases-link" href="#">versionerna på GitHub</a>.
-        </p>
-        <aside class="notice" data-testid="notice">
-          <h3>Ärligt talat</h3>
-          <p>
-            Staka är en tidig version som utvecklas och provas på en Mac med Apple Silicon och en
-            riktig SkiErg.
-            <strong
-              >Windows-versionen och Intel-delen av Mac-appen är inte provade på riktig hårdvara
-              än.</strong
-            >
-            De byggs och startas automatiskt i en molnmiljö, men ingen har åkt med dem. Hör gärna av
-            dig om något inte fungerar.
-          </p>
-        </aside>
-      </section>
+<section id="akupplevelsen" class="feature">
+  <div class="copy">
+    <p class="eyebrow">01 · Åkupplevelsen</p>
+    <h2>Spåret rullar under dig.</h2>
+    <p>Sju banor i en och samma värld, från skidstadion genom granskogen och upp i hårnålskurvorna mot fjället. Åkaren stakar i din takt, kameran lutar in i kurvorna och snön virvlar upp från skidorna.</p>
+    <ul class="points"><li>Tid på dygnet och väder väljer du själv eller låter automatiken sköta</li><li>Pass med flera intervaller, ghost och motståndare</li><li>Allt ritas i din webbläsare eller skrivbordsappen, ingen konto behövs</li></ul>
+  </div>
+  
+  <figure class="clip">
+    <video data-loop muted loop playsinline preload="none" poster="media/a-akupplevelsen.jpg" aria-label="Animation från appen">
+      <source src="media/a-akupplevelsen.webm" type="video/webm">
+      <source src="media/a-akupplevelsen.mp4" type="video/mp4">
+    </video>
+  </figure>
+</section>
 
-      <section class="wrap" id="installera" aria-labelledby="installera-rubrik">
-        <h2 id="installera-rubrik">Så installerar du</h2>
-        <p>
-          Staka är gratis och har ingen betald utvecklarsignatur från Apple eller Microsoft. Därför
-          varnar systemet första gången, och du godkänner appen själv en gång. Det tar en minut.
-        </p>
-        <div class="cards">
-          <article class="card guide" data-testid="guide-mac">
-            <h3>Mac</h3>
-            <ol>
-              <li>
-                Öppna <code>Staka-mac.dmg</code> och dra <strong>Staka</strong> till
-                <strong>Program</strong>.
-              </li>
-              <li>
-                Starta Staka från Program. macOS säger att appen inte kunde kontrolleras; klicka
-                <strong>Klar</strong>.
-              </li>
-              <li>
-                Öppna <strong>Systeminställningar → Integritet och säkerhet</strong>, rulla ned till
-                <em>Säkerhet</em> och klicka <strong>Öppna ändå</strong> vid raden om Staka.
-              </li>
-              <li>
-                Bekräfta med <strong>Öppna ändå</strong> och ditt lösenord eller Touch ID. Därefter
-                startar Staka som vanligt.
-              </li>
-            </ol>
-            <details>
-              <summary>macOS säger att ”Staka är skadat och kan inte öppnas”</summary>
-              <p>
-                Det betyder att macOS har satt karantän på den nedladdade appen, inte att filen är
-                trasig. Flytta Staka till Program, öppna <strong>Terminal</strong> och kör:
-              </p>
-              <pre><code>xattr -cr /Applications/Staka.app</code></pre>
-              <p>Starta sedan Staka igen.</p>
-            </details>
-          </article>
-          <article class="card guide" data-testid="guide-windows">
-            <h3>Windows</h3>
-            <ol>
-              <li>
-                Öppna <code>Staka-windows.exe</code>. Säger webbläsaren att filen är ovanlig, välj
-                <strong>Behåll</strong>.
-              </li>
-              <li>
-                Windows SmartScreen visar ”Windows skyddade datorn”. Klicka
-                <strong>Mer information</strong> och sedan <strong>Kör ändå</strong>.
-              </li>
-              <li>Följ installationsprogrammet. Staka hamnar i Start-menyn och på skrivbordet.</li>
-            </ol>
-            <p class="small">Bluetooth-sändningen kräver en dator med Bluetooth Low Energy.</p>
-          </article>
-        </div>
-        <p>
-          Anslut SkiErgens monitor (PM5) med USB-kabeln till datorn, starta Staka och välj ett pass.
-          Du kan också prova med simulerad åkning utan SkiErg.
-        </p>
-      </section>
+<section id="bryggan" class="feature flip">
+  <div class="copy">
+    <p class="eyebrow">02 · Bryggan till Zwift och SYSTM</p>
+    <h2>Din effekt, i dina andra appar.</h2>
+    <p><span data-name>Skare</span> läser effekt och takt från SkiErg och sänder dem vidare över Bluetooth som en effektmätare. Zwift eller Wahoo SYSTM hittar den som vilken mätare som helst, och pass från SYSTM kan du åka i 3D.</p>
+    <ul class="points"><li>Bluetooth från skrivbordsappen, USB till SkiErg</li><li>Importera pass och följ målwatten i bild</li></ul>
+  </div>
+  
+  <figure class="clip">
+    <video data-loop muted loop playsinline preload="none" poster="media/a-bryggan.jpg" aria-label="Animation från appen">
+      <source src="media/a-bryggan.webm" type="video/webm">
+      <source src="media/a-bryggan.mp4" type="video/mp4">
+    </video>
+  </figure>
+  <ol class="flow" aria-label="Flöde: SkiErg, dator, Bluetooth, iPad eller Zwift">
+  <li><b>SkiErg</b><small>din träningsmaskin</small></li><li class="link"><span>USB</span></li>
+  <li><b>Dator</b><small>kör <span data-name>Skare</span></small></li><li class="link"></li>
+  <li><b>Bluetooth</b><small>effektmätare</small></li><li class="link"></li>
+  <li><b>iPad eller Zwift</b><small>tar emot effekten</small></li>
+</ol>
+</section>
 
-      <section class="wrap" id="licenser" aria-labelledby="licenser-rubrik">
-        <h2 id="licenser-rubrik">Licenser och erkännanden</h2>
-        <p>
-          Staka är gratis och byggt med programvara med öppen källkod, bland annat Electron,
-          Chromium, React och three.js. Licenstexterna följer med i appen (Profil → Licenser och
-          erkännanden) och finns här:
-        </p>
-        <ul>
-          <li>
-            <a href="licenses/THIRD_PARTY_LICENSES.txt" data-testid="licenses-link"
-              >Licenser för programvara från tredje part</a
-            >
-          </li>
-          <li>
-            <a href="licenses/ATTRIBUTIONS.md" data-testid="attributions-link"
-              >Erkännanden för grafik och modeller</a
-            >
-          </li>
-        </ul>
-        <p class="small">
-          Concept2 och SkiErg är varumärken som tillhör Concept2, Inc. Zwift tillhör Zwift, Inc. och
-          SYSTM tillhör Wahoo Fitness. Staka är ett fristående projekt och inte knutet till,
-          sponsrat av eller godkänt av dem.
-        </p>
-      </section>
-    </main>
+<section id="historik" class="feature">
+  <div class="copy">
+    <p class="eyebrow">03 · Historik och analys</p>
+    <h2>Se att du blir starkare.</h2>
+    <p>Varje pass sparas på din dator. Tid i zon, distans, effektkurva och FTP över veckor och månader visas i klara diagram, och sammanfattningen efter passet visar varv, jämförelse och personliga rekord.</p>
+    <ul class="points"><li>Allt stannar lokalt hos dig</li><li>Jämför mot förra passet eller din ghost</li><li>Exportera när du vill</li></ul>
+  </div>
+  <figure class="still shot"><img src="media/a-historik.jpg" alt="Historik och analys i appen: tid i zon, ergdistans, effektkurva och FTP" loading="lazy" decoding="async"></figure>
+</section>
 
-    <footer class="wrap footer">
-      <p>Staka · gratis för alla · <a href="#licenser">licenser</a></p>
-    </footer>
-  </body>
+
+<section id="data" class="data">
+  <p class="eyebrow">04 · Din data</p>
+  <h2>Din historik är din.</h2>
+  <div class="cols two">
+    <div>
+      <h3>Allt stannar hos dig</h3>
+      <ul class="points"><li>Passen sparas lokalt på din dator, i appens egen lagring</li><li>Inget konto och ingen molntjänst, och inget skickas någonstans</li><li>Du kan exportera hela historiken som JSON när du vill</li><li>Att radera allt direkt i appen är planerat; tills vidare försvinner datan när du rensar appens data</li></ul>
+    </div>
+    <div>
+      <h3>Exportera till andra träningsappar</h3>
+      <ul class="points"><li>Varje pass kan exporteras som TCX, JSON eller CSV</li><li>TCX-filer går att ladda upp för hand i många träningstjänster, till exempel Strava och Garmin Connect</li><li>Export som FIT-fil är förberedd i koden men ännu inte kopplad till en knapp, och är planerad</li><li>Direkt synk till träningstjänster är inte byggd. Den är planerad på sikt</li></ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="ladda-ned" class="download">
+  <p class="eyebrow">05 · Ladda ned</p>
+  <h2>Hämta <span data-name>Skare</span>.</h2>
+  <p class="cta"><span class="btn big off" aria-disabled="true">Kommer snart</span></p>
+  <p class="small">Skrivbordsappen för Mac och Windows är på väg. Installationsguiden nedan gäller när den finns.</p>
+</section>
+
+<section id="installera" class="install">
+  <p class="eyebrow">06 · Installationsguide</p>
+  <h2>Appen är inte signerad ännu.</h2>
+  <p class="lead">Därför varnar Mac och Windows första gången. Det är normalt, och så går du vidare:</p>
+  <div class="tabs" role="tablist"><button role="tab" data-os-tab="mac" aria-selected="true">Mac</button><button role="tab" data-os-tab="windows" aria-selected="false">Windows</button></div>
+  <div data-os-panel="mac">
+    <ol>
+      <li>Öppna disk-avbilden och dra appen till Program.</li>
+      <li>Starta appen. Säger macOS att den inte kan öppnas, öppna <strong>Systeminställningar → Integritet och säkerhet</strong>.</li>
+      <li>Bläddra ned till meddelandet om appen och klicka <strong>Öppna ändå</strong>. Bekräfta med ditt lösenord.</li>
+      <li>Säger macOS i stället att appen är <em>skadad</em>, kör detta i Terminal och starta om appen:
+        <pre><code>xattr -cr /Applications/<span data-name>Skare</span>.app</code></pre></li>
+    </ol>
+  </div>
+  <div data-os-panel="windows" hidden>
+    <ol>
+      <li>Kör den nedladdade installationsfilen.</li>
+      <li>Visar Windows rutan <strong>Windows skyddade din dator</strong> (SmartScreen), klicka <strong>Mer information</strong>.</li>
+      <li>Klicka <strong>Kör ändå</strong> och följ installationen.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="oppen" class="open">
+  <p class="eyebrow">07 · Gratis och öppen källkod</p>
+  <h2>Alltid gratis. Alltid öppen.</h2>
+  <p class="lead">Inga konton, ingen prenumeration, ingen spårning. Källkoden går att läsa, ändra och dela.</p>
+  <div class="cols">
+    <div><h3>Licens</h3><p>Programmet släpps under en öppen licens som anges i förrådet. Grafik och ljud vi använder har licenser som CC0, CC BY och MIT.</p></div>
+    <div><h3>Erkännanden</h3><p>Tack till three.js, React, Poly Haven, ambientCG, Quaternius, Kenney och KayKit. Hela listan med upphovspersoner finns i ATTRIBUTIONS.md.</p></div>
+    <div><h3>Varumärken</h3><p>Concept2, SkiErg, Zwift och Wahoo tillhör sina ägare. <span data-name>Skare</span> är ett oberoende projekt. Zwift och Wahoo nämns i texten bara för att visa vad som fungerar ihop.</p></div>
+  </div>
+</section>
+</main>
+<footer><span><span data-name>Skare</span> · gratis och öppen källkod</span><a href="#hjalte">Till toppen</a></footer>
+<script src="site.js"></script>
+</body>
 </html>
