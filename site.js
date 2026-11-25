@@ -1,7 +1,7 @@
 (()=>{// Enda platsen där namnet och nedladdningsadresserna står.
 const SITE_NAME = 'Skare';
 const REPO_NAME = 'Staka';
-const RELEASES_URL = 'https://github.com/staka-app/staka-releases/releases/latest';
+const RELEASES_URL = 'https://github.com/trja0002/staka-releases/releases/latest';
 const DOWNLOADS = {
   mac: { label: 'Mac', file: `${SITE_NAME}-mac.dmg`, hint: 'macOS 13 eller senare, Apple Silicon och Intel' },
   windows: { label: 'Windows', file: `${SITE_NAME}-Setup.exe`, hint: 'Windows 10 eller senare, 64 bit' },
