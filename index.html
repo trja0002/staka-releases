@@ -24,13 +24,10 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="./assets/site-D1o9wzpK.js"></script>
+    <script type="module" crossorigin src="./assets/site-BcvEPuai.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/site-DzpN8Mh1.css">
   </head>
   <body class="draft-a">
-    <p class="banner" role="status">
-      <span data-name>Skare</span> är under utveckling – nedladdningen öppnar snart.
-    </p>
     <header class="top">
       <a class="brand" href="#hjalte"
         ><img src="media/skare-sidhuvud.svg" alt="Skare" width="172" height="66"
@@ -67,7 +64,8 @@
           åker hamnar på rätt plats, utan konto och utan att kosta något.
         </p>
         <p class="cta">
-          <span class="btn off" aria-disabled="true">Kommer snart</span
+          <a class="btn" data-download href="#ladda-ned"
+            ><span data-dl-label>Ladda ned för Mac</span></a
           ><a class="ghost" href="#sa-funkar-det">Så fungerar det</a>
         </p>
       </section>
@@ -312,8 +310,16 @@
       <section id="ladda-ned" class="download">
         <p class="eyebrow">Ladda ned</p>
         <h2>Hämta <span data-name>Skare</span>.</h2>
-        <p class="cta"><span class="btn big off" aria-disabled="true">Kommer snart</span></p>
-        <p class="small">Skrivbordsappen för Mac och Windows är på väg.</p>
+        <p class="cta">
+          <a class="btn big" data-download href="#installera"
+            ><span data-dl-label>Ladda ned för Mac</span></a
+          >
+        </p>
+        <p class="small" data-download-hint>macOS 13 eller senare, Apple Silicon och Intel.</p>
+        <p class="small"><a data-download-other hidden href="#installera"></a></p>
+        <p class="small">
+          Version 0.2.0 · gratis och öppen källkod (MIT) · appen är inte signerad, se guiden nedan.
+        </p>
       </section>
 
       <section id="installera" class="install">
