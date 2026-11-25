@@ -1,153 +1,302 @@
 <!doctype html>
 <html lang="sv">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{name} – virtuell längdskidåkning för SkiErg</title>
-<meta name="description" content="Gratis app med öppen källkod: åk längdskidor i 3D på din Concept2 SkiErg, skicka effekt till Zwift och följ utvecklingen.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2307090d%27/%3E%3Cpath d=%27M7 24 L25 8 M11 26 L27 12%27 stroke=%27%237cc4ff%27 stroke-width=%273%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skare – virtuell längdskidåkning för SkiErg</title>
+    <meta
+      name="description"
+      content="Gratis app med öppen källkod: åk längdskidor i 3D på din Concept2 SkiErg, skicka effekt till Zwift och följ utvecklingen."
+    />
+    <link rel="icon" href="icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="icons/favicon-48.png" sizes="48x48" type="image/png" />
+    <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="icons/favicon-16.png" sizes="16x16" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
 
-<link rel="canonical" href="https://getskare.stream/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Skare">
-<meta property="og:locale" content="sv_SE">
-<meta property="og:url" content="https://getskare.stream/">
-<meta property="og:title" content="Skare – virtuell längdskidåkning för SkiErg">
-<meta property="og:image" content="https://getskare.stream/media/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css">
-</head>
-<body class="draft-a">
-<p class="banner" role="status"><span data-name>Skare</span> är under utveckling – nedladdningen öppnar snart.</p>
-<header class="top">
-  <a class="brand" href="#hjalte"><span data-name>Skare</span></a>
-  <nav aria-label="Sektioner"><a href="#akupplevelsen">Åkupplevelsen</a><a href="#bryggan">Bryggan</a><a href="#historik">Historik</a><a class="keep" href="galleri.html">Galleri</a><a href="#ladda-ned" class="pill">Ladda ned</a></nav>
-</header>
-<main>
+    <link rel="canonical" href="https://getskare.stream/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Skare" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta property="og:url" content="https://getskare.stream/" />
+    <meta property="og:title" content="Skare – virtuell längdskidåkning för SkiErg" />
+    <meta property="og:image" content="https://getskare.stream/media/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="./assets/site-B6ecasYh.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/site-DxEwx5Zl.css">
+  </head>
+  <body class="draft-a">
+    <p class="banner" role="status">
+      <span data-name>Skare</span> är under utveckling – nedladdningen öppnar snart.
+    </p>
+    <header class="top">
+      <a class="brand" href="#hjalte"
+        ><img src="media/skare-sidhuvud.svg" alt="Skare" width="172" height="66"
+      /></a>
+      <nav aria-label="Sektioner">
+        <a href="#akupplevelsen">Åkupplevelsen</a><a href="#bryggan">Bryggan</a
+        ><a href="#historik">Historik</a><a class="keep" href="galleri.html">Galleri</a
+        ><a href="#ladda-ned" class="pill">Ladda ned</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hjalte" class="hero">
+        <div class="hero-bg">
+          <figure class="clip">
+            <video
+              data-loop
+              muted
+              loop
+              playsinline
+              preload="none"
+              poster="media/a-hjalte.jpg"
+              aria-label="Animation från appen"
+            >
+              <source src="media/a-hjalte.mp4" type="video/mp4" />
+              <source src="media/a-hjalte.webm" type="video/webm" />
+            </video>
+          </figure>
+        </div>
+        <p class="eyebrow">Gratis · öppen källkod · Mac och Windows</p>
+        <h1>Längdskidåkning<br />i <em>3D</em> på din SkiErg.</h1>
+        <p class="lead">
+          <span data-name>Skare</span> gör varje pass på Concept2 SkiErg till en tur på skidspår:
+          backar, kurvor, väder och motstånd som du känner i armarna.
+        </p>
+        <p class="cta">
+          <span class="btn off" aria-disabled="true">Kommer snart</span
+          ><a class="ghost" href="#installera">Installationsguide</a>
+        </p>
+      </section>
 
-<section id="hjalte" class="hero">
-  <div class="hero-bg">
-  <figure class="clip">
-    <video data-loop muted loop playsinline preload="none" poster="media/a-hjalte.jpg" aria-label="Animation från appen">
-      <source src="media/a-hjalte.mp4" type="video/mp4">
-      <source src="media/a-hjalte.webm" type="video/webm">
-    </video>
-  </figure></div>
-  <p class="eyebrow">Gratis · öppen källkod · Mac och Windows</p>
-  <h1>Längdskidåkning<br>i <em>3D</em> på din SkiErg.</h1>
-  <p class="lead"><span data-name>Skare</span> gör varje pass på Concept2 SkiErg till en tur på skidspår: backar, kurvor, väder och motstånd som du känner i armarna.</p>
-  <p class="cta"><span class="btn off" aria-disabled="true">Kommer snart</span><a class="ghost" href="#installera">Installationsguide</a></p>
-</section>
+      <section id="akupplevelsen" class="feature">
+        <div class="copy">
+          <p class="eyebrow">01 · Åkupplevelsen</p>
+          <h2>Spåret rullar under dig.</h2>
+          <p>
+            Flera världar att åka i: Granskogen, från skidstadion genom skogen och upp mot fjället,
+            med målgång i Mora, och Stockholm med sprinten genom Gamla stan. Åkaren stakar i din
+            takt, kameran lutar in i kurvorna och snön virvlar upp från skidorna.
+          </p>
+          <ul class="points">
+            <li>Tid på dygnet och väder väljer du själv eller låter automatiken sköta</li>
+            <li>Pass med flera intervaller, ghost och motståndare</li>
+            <li>
+              Markera ögonblicket med en knapptryckning: platsen, vädret och en bild sparas i
+              historiken
+            </li>
+            <li>Allt ritas i skrivbordsappen, och inget konto behövs</li>
+          </ul>
+        </div>
 
-<section id="akupplevelsen" class="feature">
-  <div class="copy">
-    <p class="eyebrow">01 · Åkupplevelsen</p>
-    <h2>Spåret rullar under dig.</h2>
-    <p>Sju banor i en och samma värld, från skidstadion genom granskogen och upp i hårnålskurvorna mot fjället. Åkaren stakar i din takt, kameran lutar in i kurvorna och snön virvlar upp från skidorna.</p>
-    <ul class="points"><li>Tid på dygnet och väder väljer du själv eller låter automatiken sköta</li><li>Pass med flera intervaller, ghost och motståndare</li><li>Allt ritas i din webbläsare eller skrivbordsappen, ingen konto behövs</li></ul>
-  </div>
-  
-  <figure class="clip">
-    <video data-loop muted loop playsinline preload="none" poster="media/a-akupplevelsen.jpg" aria-label="Animation från appen">
-      <source src="media/a-akupplevelsen.mp4" type="video/mp4">
-      <source src="media/a-akupplevelsen.webm" type="video/webm">
-    </video>
-  </figure>
-</section>
+        <figure class="clip">
+          <video
+            data-loop
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="media/a-akupplevelsen.jpg"
+            aria-label="Animation från appen"
+          >
+            <source src="media/a-akupplevelsen.mp4" type="video/mp4" />
+            <source src="media/a-akupplevelsen.webm" type="video/webm" />
+          </video>
+        </figure>
+      </section>
 
-<section id="bryggan" class="feature flip">
-  <div class="copy">
-    <p class="eyebrow">02 · Bryggan till Zwift och SYSTM</p>
-    <h2>Din effekt, i dina andra appar.</h2>
-    <p><span data-name>Skare</span> läser effekt och takt från SkiErg och sänder dem vidare över Bluetooth som en effektmätare. Zwift eller Wahoo SYSTM hittar den som vilken mätare som helst, och pass från SYSTM kan du åka i 3D.</p>
-    <ul class="points"><li>Bluetooth från skrivbordsappen, USB till SkiErg</li><li>Importera pass och följ målwatten i bild</li></ul>
-  </div>
-  
-  <figure class="clip">
-    <video data-loop muted loop playsinline preload="none" poster="media/a-bryggan.jpg" aria-label="Animation från appen">
-      <source src="media/a-bryggan.mp4" type="video/mp4">
-      <source src="media/a-bryggan.webm" type="video/webm">
-    </video>
-  </figure>
-  <ol class="flow" aria-label="Flöde: SkiErg, dator, Bluetooth, iPad eller Zwift">
-  <li><b>SkiErg</b><small>din träningsmaskin</small></li><li class="link"><span>USB</span></li>
-  <li><b>Dator</b><small>kör <span data-name>Skare</span></small></li><li class="link"></li>
-  <li><b>Bluetooth</b><small>effektmätare</small></li><li class="link"></li>
-  <li><b>iPad eller Zwift</b><small>tar emot effekten</small></li>
-</ol>
-</section>
+      <section id="bryggan" class="feature flip">
+        <div class="copy">
+          <p class="eyebrow">02 · Träna i annan app</p>
+          <h2>Din effekt, i dina andra appar.</h2>
+          <p>
+            <span data-name>Skare</span> läser effekt och takt från SkiErg och sänder dem vidare
+            över Bluetooth som en effektmätare. Zwift eller Wahoo SYSTM hittar den som vilken mätare
+            som helst, och pass från SYSTM kan du åka i 3D.
+          </p>
+          <ul class="points">
+            <li>
+              Välj <em>Träna i annan app</em> i skrivbordsappen: USB till SkiErg, Bluetooth till
+              Zwift eller SYSTM
+            </li>
+            <li>Omräkningen till cykelwatt följer din profil, och passet sparas i historiken</li>
+            <li>Importera pass och följ målwatten i bild</li>
+          </ul>
+        </div>
 
-<section id="historik" class="feature">
-  <div class="copy">
-    <p class="eyebrow">03 · Historik och analys</p>
-    <h2>Se att du blir starkare.</h2>
-    <p>Varje pass sparas på din dator. Tid i zon, distans, effektkurva och FTP över veckor och månader visas i klara diagram, och sammanfattningen efter passet visar varv, jämförelse och personliga rekord.</p>
-    <ul class="points"><li>Allt stannar lokalt hos dig</li><li>Jämför mot förra passet eller din ghost</li><li>Exportera när du vill</li></ul>
-  </div>
-  <figure class="still shot"><img src="media/a-historik.jpg" alt="Historik och analys i appen: tid i zon, ergdistans, effektkurva och FTP" loading="lazy" decoding="async"></figure>
-</section>
+        <figure class="clip">
+          <video
+            data-loop
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="media/a-bryggan.jpg"
+            aria-label="Animation från appen"
+          >
+            <source src="media/a-bryggan.mp4" type="video/mp4" />
+            <source src="media/a-bryggan.webm" type="video/webm" />
+          </video>
+        </figure>
+        <ol class="flow" aria-label="Flöde: SkiErg, dator, Bluetooth, iPad eller Zwift">
+          <li><b>SkiErg</b><small>din träningsmaskin</small></li>
+          <li class="link"><span>USB</span></li>
+          <li>
+            <b>Dator</b><small>kör <span data-name>Skare</span></small>
+          </li>
+          <li class="link"></li>
+          <li><b>Bluetooth</b><small>effektmätare</small></li>
+          <li class="link"></li>
+          <li><b>iPad eller Zwift</b><small>tar emot effekten</small></li>
+        </ol>
+      </section>
 
+      <section id="historik" class="feature">
+        <div class="copy">
+          <p class="eyebrow">03 · Historik och analys</p>
+          <h2>Se att du blir starkare.</h2>
+          <p>
+            Varje pass sparas på din dator. Tid i zon, distans, effektkurva och FTP över veckor och
+            månader visas i klara diagram, och sammanfattningen efter passet visar varv, jämförelse
+            och personliga rekord.
+          </p>
+          <ul class="points">
+            <li>Allt stannar lokalt hos dig</li>
+            <li>Jämför mot förra passet eller din ghost</li>
+            <li>Exportera när du vill</li>
+          </ul>
+        </div>
+        <figure class="still shot">
+          <img
+            src="media/a-historik.jpg"
+            alt="Historik och analys i appen: tid i zon, ergdistans, effektkurva och FTP"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </section>
 
-<section id="data" class="data">
-  <p class="eyebrow">04 · Din data</p>
-  <h2>Din historik är din.</h2>
-  <div class="cols two">
-    <div>
-      <h3>Allt stannar hos dig</h3>
-      <ul class="points"><li>Passen sparas lokalt på din dator, i appens egen lagring</li><li>Inget konto och ingen molntjänst, och inget skickas någonstans</li><li>Du kan exportera hela historiken som JSON när du vill</li><li>Att radera allt direkt i appen är planerat; tills vidare försvinner datan när du rensar appens data</li></ul>
-    </div>
-    <div>
-      <h3>Exportera till andra träningsappar</h3>
-      <ul class="points"><li>Varje pass kan exporteras som TCX, JSON eller CSV</li><li>TCX-filer går att ladda upp för hand i många träningstjänster, till exempel Strava och Garmin Connect</li><li>Export som FIT-fil är förberedd i koden men ännu inte kopplad till en knapp, och är planerad</li><li>Direkt synk till träningstjänster är inte byggd. Den är planerad på sikt</li></ul>
-    </div>
-  </div>
-</section>
+      <section id="data" class="data">
+        <p class="eyebrow">04 · Din data</p>
+        <h2>Din historik är din.</h2>
+        <div class="cols two">
+          <div>
+            <h3>Allt stannar hos dig</h3>
+            <ul class="points">
+              <li>Passen sparas lokalt på din dator, i appens egen lagring</li>
+              <li>Inget konto och ingen molntjänst, och inget skickas någonstans</li>
+              <li>Du kan exportera hela historiken som JSON när du vill</li>
+              <li>
+                Att radera allt direkt i appen är planerat; tills vidare försvinner datan när du
+                rensar appens data
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Exportera till andra träningsappar</h3>
+            <ul class="points">
+              <li>Varje pass kan exporteras som TCX, JSON eller CSV</li>
+              <li>
+                TCX-filer går att ladda upp för hand i många träningstjänster, till exempel Strava
+                och Garmin Connect
+              </li>
+              <li>
+                Export som FIT-fil är förberedd i koden men ännu inte kopplad till en knapp, och är
+                planerad
+              </li>
+              <li>Direkt synk till träningstjänster är inte byggd. Den är planerad på sikt</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
+      <section id="ladda-ned" class="download">
+        <p class="eyebrow">05 · Ladda ned</p>
+        <h2>Hämta <span data-name>Skare</span>.</h2>
+        <p class="cta"><span class="btn big off" aria-disabled="true">Kommer snart</span></p>
+        <p class="small">
+          Skrivbordsappen för Mac och Windows är på väg. Installationsguiden nedan gäller när den
+          finns.
+        </p>
+      </section>
 
-<section id="ladda-ned" class="download">
-  <p class="eyebrow">05 · Ladda ned</p>
-  <h2>Hämta <span data-name>Skare</span>.</h2>
-  <p class="cta"><span class="btn big off" aria-disabled="true">Kommer snart</span></p>
-  <p class="small">Skrivbordsappen för Mac och Windows är på väg. Installationsguiden nedan gäller när den finns.</p>
-</section>
+      <section id="installera" class="install">
+        <p class="eyebrow">06 · Installationsguide</p>
+        <h2>Appen är inte signerad ännu.</h2>
+        <p class="lead">
+          Därför varnar Mac och Windows första gången. Det är normalt, och så går du vidare:
+        </p>
+        <div class="tabs" role="tablist">
+          <button role="tab" data-os-tab="mac" aria-selected="true">Mac</button
+          ><button role="tab" data-os-tab="windows" aria-selected="false">Windows</button>
+        </div>
+        <div data-os-panel="mac">
+          <ol>
+            <li>Öppna disk-avbilden och dra appen till Program.</li>
+            <li>
+              Starta appen. Säger macOS att den inte kan öppnas, öppna
+              <strong>Systeminställningar → Integritet och säkerhet</strong>.
+            </li>
+            <li>
+              Bläddra ned till meddelandet om appen och klicka <strong>Öppna ändå</strong>. Bekräfta
+              med ditt lösenord.
+            </li>
+            <li>
+              Säger macOS i stället att appen är <em>skadad</em>, kör detta i Terminal och starta om
+              appen:
+              <pre><code>xattr -cr /Applications/<span data-name>Skare</span>.app</code></pre>
+            </li>
+          </ol>
+        </div>
+        <div data-os-panel="windows" hidden>
+          <ol>
+            <li>Kör den nedladdade installationsfilen.</li>
+            <li>
+              Visar Windows rutan <strong>Windows skyddade din dator</strong> (SmartScreen), klicka
+              <strong>Mer information</strong>.
+            </li>
+            <li>Klicka <strong>Kör ändå</strong> och följ installationen.</li>
+          </ol>
+        </div>
+      </section>
 
-<section id="installera" class="install">
-  <p class="eyebrow">06 · Installationsguide</p>
-  <h2>Appen är inte signerad ännu.</h2>
-  <p class="lead">Därför varnar Mac och Windows första gången. Det är normalt, och så går du vidare:</p>
-  <div class="tabs" role="tablist"><button role="tab" data-os-tab="mac" aria-selected="true">Mac</button><button role="tab" data-os-tab="windows" aria-selected="false">Windows</button></div>
-  <div data-os-panel="mac">
-    <ol>
-      <li>Öppna disk-avbilden och dra appen till Program.</li>
-      <li>Starta appen. Säger macOS att den inte kan öppnas, öppna <strong>Systeminställningar → Integritet och säkerhet</strong>.</li>
-      <li>Bläddra ned till meddelandet om appen och klicka <strong>Öppna ändå</strong>. Bekräfta med ditt lösenord.</li>
-      <li>Säger macOS i stället att appen är <em>skadad</em>, kör detta i Terminal och starta om appen:
-        <pre><code>xattr -cr /Applications/<span data-name>Skare</span>.app</code></pre></li>
-    </ol>
-  </div>
-  <div data-os-panel="windows" hidden>
-    <ol>
-      <li>Kör den nedladdade installationsfilen.</li>
-      <li>Visar Windows rutan <strong>Windows skyddade din dator</strong> (SmartScreen), klicka <strong>Mer information</strong>.</li>
-      <li>Klicka <strong>Kör ändå</strong> och följ installationen.</li>
-    </ol>
-  </div>
-</section>
-
-<section id="oppen" class="open">
-  <p class="eyebrow">07 · Gratis och öppen källkod</p>
-  <h2>Alltid gratis. Alltid öppen.</h2>
-  <p class="lead">Inga konton, ingen prenumeration, ingen spårning. Källkoden går att läsa, ändra och dela.</p>
-  <div class="cols">
-    <div><h3>Licens</h3><p>Programmet släpps under en öppen licens som anges i förrådet. Grafik och ljud vi använder har licenser som CC0, CC BY och MIT.</p></div>
-    <div><h3>Erkännanden</h3><p>Tack till three.js, React, Poly Haven, ambientCG, Quaternius, Kenney och KayKit. Hela listan med upphovspersoner finns i ATTRIBUTIONS.md.</p></div>
-    <div><h3>Varumärken</h3><p>Concept2, SkiErg, Zwift och Wahoo tillhör sina ägare. <span data-name>Skare</span> är ett oberoende projekt. Zwift och Wahoo nämns i texten bara för att visa vad som fungerar ihop.</p></div>
-  </div>
-</section>
-</main>
-<footer><span><span data-name>Skare</span> · gratis och öppen källkod</span><a href="#hjalte">Till toppen</a></footer>
-<script src="site.js"></script>
-</body>
+      <section id="oppen" class="open">
+        <p class="eyebrow">07 · Gratis och öppen källkod</p>
+        <h2>Alltid gratis. Alltid öppen.</h2>
+        <p class="lead">
+          Inga konton, ingen prenumeration, ingen spårning. Källkoden går att läsa, ändra och dela.
+        </p>
+        <div class="cols">
+          <div>
+            <h3>Licens</h3>
+            <p>
+              Programmet släpps under en öppen licens som anges i förrådet. Grafik och ljud vi
+              använder har licenser som CC0, CC BY och MIT.
+            </p>
+          </div>
+          <div>
+            <h3>Erkännanden</h3>
+            <p>
+              Tack till three.js, React, Poly Haven, ambientCG, Quaternius, Kenney och KayKit. Hela
+              listan med upphovspersoner finns i ATTRIBUTIONS.md.
+            </p>
+          </div>
+          <div>
+            <h3>Varumärken</h3>
+            <p>
+              Concept2, SkiErg, Zwift och Wahoo tillhör sina ägare. <span data-name>Skare</span> är
+              ett oberoende projekt. Zwift och Wahoo nämns i texten bara för att visa vad som
+              fungerar ihop.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span><span data-name>Skare</span> · gratis och öppen källkod</span
+      ><a href="#hjalte">Till toppen</a>
+    </footer>
+  </body>
 </html>

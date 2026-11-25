@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://getskare.stream/</loc></url>
-  <url><loc>https://getskare.stream/galleri.html</loc></url>
+  <url>
+    <loc>https://getskare.stream/</loc>
+  </url>
 </urlset>
